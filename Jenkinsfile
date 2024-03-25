@@ -21,13 +21,6 @@ pipeline {
                 echo 'Testowanie aplikacji...'
             }
         }
-        stage('Deploy') {
-            when {
-                expression { params.GREETING }
-            }
-            steps {
-                echo 'Wdrażanie aplikacji...'
-            }
         }
     }
-}
+
