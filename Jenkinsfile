@@ -23,7 +23,7 @@ pipeline {
         }
         stage('Deploy') {
             when {
-                expression { params.DEPLOY }
+                expression { params.GREETING }
             }
             steps {
                 echo 'Wdrażanie aplikacji...'
